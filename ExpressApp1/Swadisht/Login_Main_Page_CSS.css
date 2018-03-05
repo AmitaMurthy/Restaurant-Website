@@ -1,0 +1,479 @@
+﻿body {
+    font: 15px/1.5 Arial, Helvetica;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+
+.container {
+    margin: 0px;
+    padding: 0;
+    color: black;
+    background-image: url("./SwadishtImages/Background1.jpg");
+    min-height: 70px;
+    overflow: hidden;
+}
+
+.social {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.fb {
+    margin-top: 40px;
+    padding: 10px;
+}
+
+    .fb:hover, .tw:hover {
+    }
+
+.container2 {
+    background-image: url("./SwadishtImages/Background2.jpg");
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    border-bottom: crimson 30px ridge;
+    border-top: crimson 30px groove;
+    color: aliceblue;
+    font-family: 'Sancreek';
+    overflow: hidden;
+}
+
+p.heading {
+    padding: 20px;
+}
+
+ul {
+    text-align: right;
+    list-style-type: none;
+    margin-right: 60px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+li {
+    display: inline;
+    padding: 0 20px 0 20px;
+    text-transform: capitalize;
+    color: white;
+}
+
+a:hover {
+    color: yellow;
+}
+
+
+
+/*include code for Login Form here*/
+
+.container3 {
+    background-image: url("./SwadishtImages/Background4.jpg");
+    min-height: 450px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+
+.login h1 {
+    /* 	background-color: inherit;*/
+    padding: 20px 35px;
+    margin: -10px -50px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.login hr {
+    margin: 10px -50px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-bottom: 40px;
+}
+
+div.login {
+    width: 300px;
+    padding: 10px 50px 25px;
+    /* border: 2px solid gray;
+	border-radius: 10px; */
+    font-family: raleway;
+    float: left;
+    margin-left: 555px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.login input[type=text], .login input[type=password] {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    color: #4f4f4f;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.login label {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login center {
+    font-size: 32px;
+}
+
+
+
+.login.valid {
+    color: green;
+}
+
+.login.back {
+    text-decoration: none;
+    border: 1px solid rgb(0, 143, 255);
+    background-color: rgb(0, 214, 255);
+    padding: 3px 20px;
+    border-radius: 2px;
+    color: black;
+}
+
+.login button {
+    font-size: 16px;
+    background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
+    border: 1px solid #e5a900;
+    color: #4E4D4B;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 0;
+    outline: none;
+}
+
+    .login button:hover {
+        background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
+    }
+
+.login_message {
+    text-align: center;
+    font-family: raleway;
+}
+
+    .login_message button {
+        font-size: medium;
+        background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
+        border: 1px solid #e5a900;
+        color: #4E4D4B;
+        font-weight: bold;
+        cursor: pointer;
+        width: 250px;
+        border-radius: 5px;
+        padding: 10px;
+        outline: none;
+        font-family: raleway;
+    }
+
+            .login_message button:hover {
+                background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
+                font-size:larger;
+            }
+
+            
+
+/*include code for Login Form here*/
+
+
+
+/*include code for Create Account Form here*/
+.createAccount h1 {
+    /* 	background-color: inherit;*/
+    padding: 20px 35px;
+    margin: -10px -50px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    font-family: raleway;
+}
+
+.createAccount hr {
+    margin: 10px -50px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-bottom: 40px;
+}
+
+
+
+.createAccount label {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.createAccount center {
+    font-size: 32px;
+}
+
+
+
+.createAccount.valid {
+    color: green;
+}
+
+.createAccount.back {
+    text-decoration: none;
+    border: 1px solid rgb(0, 143, 255);
+    background-color: rgb(0, 214, 255);
+    padding: 3px 20px;
+    border-radius: 2px;
+    color: black;
+}
+
+.createAccountLeft {
+    width: 300px;
+    padding: 10px 50px 25px;
+    /* border: 2px solid gray;
+	border-radius: 10px; */
+    font-family: raleway;
+    float: left;
+    margin-left: 300px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.createAccountRight {
+    width: 300px;
+    padding: 10px 50px 25px;
+    /* border: 2px solid gray;
+	border-radius: 10px; */
+    font-family: raleway;
+    float: right;
+    margin-right: 300px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+    .createAccount input[type=text], .createAccount input[type=password] {
+        width: 100%;
+        height: 40px;
+        padding: 5px;
+        margin-bottom: 25px;
+        margin-top: 5px;
+        border: 2px solid #ccc;
+        color: #4f4f4f;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+.createAccount button {
+    font-size: 16px;
+    background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
+    border: 1px solid #e5a900;
+    color: #4E4D4B;
+    font-weight: bold;
+    cursor: pointer;
+    width:300px;
+    margin-top:100px;
+    margin-bottom:50px;
+    
+    border-radius: 5px;
+    padding: 10px 0;
+    outline: none;
+}
+
+    .createAccount button:hover {
+        background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
+    }
+
+
+.createGuestLeft {
+    width: 300px;
+    padding: 10px 50px 25px;
+    /* border: 2px solid gray;
+	border-radius: 10px; */
+    font-family: raleway;
+    float: left;
+    margin-left: 300px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.createGuestRight {
+    width: 300px;
+    padding: 10px 50px 25px;
+    /* border: 2px solid gray;
+	border-radius: 10px; */
+    font-family: raleway;
+    float: right;
+    margin-right: 300px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.createGuest h1 {
+    /* 	background-color: inherit;*/
+    padding: 20px 35px;
+    margin: -10px -50px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    font-family: raleway;
+}
+
+    .createGuest hr {
+        margin: 10px -50px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin-bottom: 40px;
+    }
+
+
+
+    .createGuest label {
+        color: black;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .createGuest center {
+        font-size: 32px;
+    }
+
+
+
+    .createGuest.valid {
+        color: green;
+    }
+
+    .createGuest.back {
+        text-decoration: none;
+        border: 1px solid rgb(0, 143, 255);
+        background-color: rgb(0, 214, 255);
+        padding: 3px 20px;
+        border-radius: 2px;
+        color: black;
+    }
+
+
+
+    .createGuest input[type=text], .createGuest input[type=password] {
+        width: 100%;
+        height: 40px;
+        padding: 5px;
+        margin-bottom: 25px;
+        margin-top: 5px;
+        border: 2px solid #ccc;
+        color: #4f4f4f;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+.createGuest button {
+    font-size: 16px;
+    background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
+    border: 1px solid #e5a900;
+    color: #4E4D4B;
+    font-weight: bold;
+    cursor: pointer;
+    width: 300px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    padding: 10px 0;
+    outline: none;
+}
+
+    .createGuest button:hover {
+        background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
+    }
+    
+
+
+/*Create Account Form end*/
+
+
+
+
+/*include code for Login Main Page Form here*/
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border-bottom: 0px;
+    border-bottom-style:groove;
+    border-bottom-color:darkolivegreen;
+    /*background-color: #f1f1f1;*/
+    background-image: url("./SwadishtImages/Background4.jpg");
+}
+
+    /* Style the buttons inside the tab */
+    div.tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+    }
+
+        /* Change background color of buttons on hover */
+        div.tab button:hover {
+           
+            font-size:medium;
+        }
+
+        /* Create an active/current tablink class */
+        div.tab button.active {
+            background-color: #ffbc00;
+            
+      
+        }
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/*include code for Login Main Page Form here*/
+
+
+.container4 {
+    color: beige;
+    padding: 0;
+    margin: 0;
+    border-top: crimson 30px groove;
+    background-color: crimson;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: smaller;
+    text-align: center;
+}
+
+.address {
+    padding: 0;
+    margin-top: 5px;
+    line-height: 1px;
+}
+
+.phone {
+    line-height: 15px;
+    margin: 0;
+}
+
+.developedBy {
+    margin: 0;
+    padding: 0;
+    line-height: 27px;
+}

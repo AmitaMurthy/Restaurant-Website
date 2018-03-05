@@ -1,0 +1,67 @@
+[
+  {
+    "customer_Name": "Amita",
+    "customer_Mobile": "7829866591",
+    "customer_Apt": "1307",
+    "customer_Street": "2001 Gemini Ave",
+    "customer_City": "Houston",
+    "customer_State": "Texas",
+    "customer_Country": "United States",
+    "customer_ZIP": "77058",
+    "customer_email": "amita.s.murthy@gmail.com",
+    "customer_password": "abc",
+    "confirm_password": "abc"
+  },
+  {
+    "customer_Name": "Varun",
+    "customer_Mobile": "",
+    "customer_Apt": "",
+    "customer_Street": "2001 Gemini ave, apt 1307",
+    "customer_City": "Houston",
+    "customer_State": "Texas",
+    "customer_Country": "",
+    "customer_ZIP": "77058",
+    "customer_email": "varunyj@gmail.com",
+    "customer_password": "xyz",
+    "confirm_password": "xyz"
+  },
+  {
+    "customer_Name": "Amit",
+    "customer_Mobile": "1234567890",
+    "customer_Apt": "kjkjh",
+    "customer_Street": "ljkj",
+    "customer_City": "hjgj",
+    "customer_State": "lkjkhjh",
+    "customer_Country": "khjhg",
+    "customer_ZIP": "hhj",
+    "customer_email": "nv",
+    "customer_password": "xyz",
+    "confirm_password": "xyz"
+  },
+  {
+    "customer_Name": "Saleela",
+    "customer_Mobile": "1234669980",
+    "customer_Apt": "gffdhgfghf",
+    "customer_Street": "mghmfhg",
+    "customer_City": "jhkj",
+    "customer_State": "jjhjk",
+    "customer_Country": "jhjk",
+    "customer_ZIP": "jkhj",
+    "customer_email": "sakekgyf@ygjkguj",
+    "customer_password": "wer",
+    "confirm_password": "wer"
+  },
+  {
+    "customer_Name": "gjhgj",
+    "customer_Mobile": "bjhvjh",
+    "customer_Apt": "hvhv",
+    "customer_Street": "vhjvh",
+    "customer_City": "vnnvn",
+    "customer_State": "vnbvnv",
+    "customer_Country": "vhvh",
+    "customer_ZIP": "vhnbvv",
+    "customer_email": "vhnvh",
+    "customer_password": "vbvv",
+    "confirm_password": "vhjbj"
+  }
+]

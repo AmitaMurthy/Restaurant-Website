@@ -1,0 +1,183 @@
+﻿body {
+    font: 15px/1.5 Arial, Helvetica;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+
+.container {
+    margin: 0px;
+    padding: 0;
+    color: black;
+    background-image: url("./SwadishtImages/Background1.jpg");
+    min-height: 70px;
+    overflow: hidden;
+}
+
+.social {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.fb {
+    margin-top: 40px;
+    padding: 10px;
+}
+
+    .fb:hover, .tw:hover {
+    }
+
+.container2 {
+    background-image: url("./SwadishtImages/Background2.jpg");
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    border-bottom: crimson 30px ridge;
+    border-top: crimson 30px groove;
+    color: aliceblue;
+    font-family: 'Sancreek';
+    overflow: hidden;
+}
+
+p.heading {
+    padding: 20px;
+}
+
+ul {
+    text-align: right;
+    list-style-type: none;
+    margin-right: 60px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.home {
+    color: greenyellow;
+}
+
+
+li {
+    display: inline;
+    padding: 0 20px 0 20px;
+    text-transform: capitalize;
+    color: white;
+}
+
+a:hover {
+    color: yellow;
+}
+
+
+.container3 {
+    background-image: url("./SwadishtImages/Background4.jpg");
+    min-height: 400px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+    .container3 h1 {
+        text-align: center;
+        font-family: raleway;
+    }
+
+
+.reserve {
+    width: 300px;
+    padding: 10px 50px 25px;
+    /* border: 2px solid gray;
+	border-radius: 10px; */
+    font-family: raleway;
+    float: left;
+    margin-left: 560px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+    .reserve select {
+        width: 100%;
+        height: 40px;
+        padding: 5px;
+        margin-bottom: 25px;
+        margin-top: 5px;
+        border: 2px solid #ccc;
+        color: #4f4f4f;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .reserve label {
+        color: black;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .reserve center {
+        font-size: 32px;
+    }
+
+
+
+    .reserve.valid {
+        color: green;
+    }
+
+    .reserve.back {
+        text-decoration: none;
+        border: 1px solid rgb(0, 143, 255);
+        background-color: rgb(0, 214, 255);
+        padding: 3px 20px;
+        border-radius: 2px;
+        color: black;
+    }
+
+    .reserve button {
+        font-size: 16px;
+        background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
+        border: 1px solid #e5a900;
+        color: #4E4D4B;
+        font-weight: bold;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px 0;
+        outline: none;
+    }
+
+        .reserve button:hover {
+            background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
+        }
+
+.container4 {
+    color: beige;
+    padding: 0;
+    margin: 0;
+    border-top: crimson 30px groove;
+    background-color: crimson;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: smaller;
+    text-align: center;
+}
+
+.address {
+    padding: 0;
+    margin-top: 5px;
+    line-height: 1px;
+}
+
+.phone {
+    line-height: 15px;
+    margin: 0;
+}
+
+.developedBy {
+    margin: 0;
+    padding: 0;
+    line-height: 27px;
+}

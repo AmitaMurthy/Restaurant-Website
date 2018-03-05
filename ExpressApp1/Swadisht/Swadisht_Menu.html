@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="myMenu">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title> Swadisht | Authentic Indian Restaurant</title>
+    <link rel="stylesheet" href="./Swadisht_Menu_CSS.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.js"></script>
+    <script src="shoppingCart.js"></script>
+</head>
+
+<body ng-controller="cartCtr">
+    <header class="container">
+        <div class="social">
+
+            <span class="like">Like us on</span>
+            <span class="fb"><a href="https://www.facebook.com/Swadisht-1859268741007293/" target="_blank"><img src="./SwadishtImages/fb.png" style='width:30px;' /></a></span>
+            <span class="tw"><a href="https://twitter.com/SwadishtProject" target="_blank"><img src="./SwadishtImages/tw.png" style='width:30px' /></a></span>
+
+        </div>
+
+    </header>
+
+    <header class="container2">
+        <div class="heading" style="margin-left:50px; font-size:40px; font-family: 'Sancreek';">Swadisht!!</div>
+
+        <ul class="options">
+            <a href="./index.html"><li class="home">Home</li></a>
+            <a href="./Swadisht_About.html"><li class="about">About Us</li></a>
+            <a href="./Login_Main_Page.html"><li class="menu">Login</li></a>
+            <a href="./Swadisht_Menu.html"><li class="menu">Order Online</li></a>
+            <a href="./Swadisht_Review.html"><li class="review">Review</li></a>
+            <a href="./Reservation.html"><li class="reservation">Reserve Table</li></a>
+            <a href="./Admin login.html"><li class="admin">Admin</li></a>
+        </ul>
+    </header>
+
+
+    <div class="tab">
+        <button class="tablinks" onclick="openMenu(event, 'Starters')" id="defaultOpen">Starters</button>
+        <button class="tablinks" onclick="openMenu(event, 'Soups')">Soups</button>
+        <button class="tablinks" onclick="openMenu(event, 'Main Course')">Main Course</button>
+        <button class="tablinks" onclick="openMenu(event, 'Rice')">Rice</button>
+        <button class="tablinks" onclick="openMenu(event, 'Breads')">Breads</button>
+        <button class="tablinks" onclick="openMenu(event, 'Beverages')">Beverages</button>
+        <button class="tablinks" onclick="openMenu(event, 'Desserts')">Desserts</button>
+    </div>
+
+    <section>
+        <div id="Starters" class="tabcontent">
+            <div ng-controller="starterCtr">
+                <center><h1 class="foodTypeheadings">Starters</h1></center>
+                <div ng-repeat="x in starter" class="foodItemheadings">
+
+                    {{x.name}} ${{x.price}}<br />
+                    <button ng-click="addItemToCart(x.id, x.name)" class="addbutton">Add to Cart</button>
+                    <button ng-click="removeItemFromCart(x.name)" class="removebutton">Remove from Cart</button>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="Soups" class="tabcontent">
+            <div ng-controller="soupCtr">
+                <center><h1 class="foodTypeheadings">Soups</h1></center>
+                <div ng-repeat="x in soups" class="foodItemheadings">
+
+                    {{x.name}}  ${{x.price}}<br />
+                    <button ng-click="addItemToCart(x.id, x.name)" class="addbutton">Add to Cart</button>
+                    <button ng-click="removeItemFromCart(x.name)" class="removebutton">Remove from Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="Main Course" class="tabcontent">
+            <div ng-controller="mainCourseCtr">
+                <center><h1 class="foodTypeheadings">Main Course</h1></center>
+                <div ng-repeat="x in mainCourse" class="foodItemheadings">
+
+                    {{x.name}}  ${{x.price}}<br />
+                    <button ng-click="addItemToCart(x.id, x.name)" class="addbutton">Add to Cart</button>
+                    <button ng-click="removeItemFromCart(x.name)" class="removebutton">Remove from Cart</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="Rice" class="tabcontent">
+            <div ng-controller="riceCtr">
+                <center><h1 class="foodTypeheadings">Rice</h1></center>
+                <div ng-repeat="x in Rice" class="foodItemheadings">
+
+                    {{x.name}}  ${{x.price}}<br />
+                    <button ng-click="addItemToCart(x.id, x.name)" class="addbutton">Add to Cart</button>
+                    <button ng-click="removeItemFromCart(x.name)" class="removebutton">Remove from Cart</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="Breads" class="tabcontent">
+
+            <div ng-controller="breadCtr">
+                <center><h1 class="foodTypeheadings">Breads</h1></center>
+                <div ng-repeat="x in Breads" class="foodItemheadings">
+
+                    {{x.name}}  ${{x.price}}<br />
+                    <button ng-click="addItemToCart(x.id, x.name)" class="addbutton">Add to Cart</button>
+                    <button ng-click="removeItemFromCart(x.name)" class="removebutton">Remove from Cart</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="Beverages" class="tabcontent">
+            <div ng-controller="beverageCtr">
+                <center><h1 class="foodTypeheadings">Beverages</h1></center>
+                <div ng-repeat="x in Beverages" class="foodItemheadings">
+
+                    {{x.name}}  ${{x.price}}<br />
+                    <button ng-click="addItemToCart(x.id, x.name)" class="addbutton">Add to Cart</button>
+                    <button ng-click="removeItemFromCart(x.name)" class="removebutton">Remove from Cart</button>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="Desserts" class="tabcontent">
+            <div ng-controller="dessertCtr">
+                <center><h1 class="foodTypeheadings">Desserts</h1></center>
+                <div ng-repeat="x in Desserts" class="foodItemheadings">
+
+                    {{x.name}} 	${{x.price}}<br />
+                    <button ng-click="addItemToCart(x.id, x.name)" class="addbutton">Add to Cart</button>
+                    <button ng-click="removeItemFromCart(x.name)" class="removebutton">Remove from Cart</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <p class="foodTypeheadings"><h1 style="font-family:'Sancreek'; margin-left:860px;">Food Basket</h1></p>
+    <section>
+        <div id="cart">
+
+            <table class="table" style="border: 1px">
+                <tr>
+                    <th>Food Item</th>
+                    <th><center>Quantity</center></th>
+                    <th><center>Item Net Price</center></th>
+                </tr>
+
+                <tr ng-repeat="x in cart">
+                    <td>{{x.name}}</td>
+                    <td><center><input type="text" size="5" ng-model="x.qnt"></center></td>
+                    <td ng-model="x.price"><center>${{x.qnt * x.price}}</center></td>
+                    <td ng-click="removeFromCart(x.name)"><button class="removebutton">Remove Food</button></td>
+                </tr>
+            </table>
+
+            <div ng-controller="priceCtr">
+                <div>
+                  <h1>  <lable ng-model="totalPrice()" style="font-family:'Sancreek';">Total Cost:</lable>
+                    ${{priceTotal}}</h1>
+                </div>
+            </div>
+
+            <p>
+                <span><button ng-click="clearCart()" class="clearbutton">Clear Cart</button></span>
+
+
+                <span><form method="post" action="/checkout"><button class="checkbutton">CheckOut</button></form></span>
+            </p>
+
+    </section>
+
+
+    <footer class="container4">
+        <p class="address">
+            |  Address:
+            <span>2007 Gemini Avenue, #1302, Houston Texas  |</span>
+        </p>
+        <p class="phone">
+            |  Telephone Number:
+            <span>123-456-(7890)  |</span>
+        </p>
+        <p class="developedBy">Developed By: IAD Class, Team 25</p>
+    </footer>
+
+    <script>
+        function openMenu(evt, evtName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the link that opened the tab
+            document.getElementById(evtName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>

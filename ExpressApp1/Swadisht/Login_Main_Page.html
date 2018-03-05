@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title> Swadisht | Authentic Indian Restaurant</title>
+    <link rel="stylesheet" href="./Login_Main_Page_CSS.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.js"></script>
+    <script>
+        var app = angular.module('myApp', ['ngResource']);
+        app.controller('myCtrl', function ($scope, $resource) {
+            var request = $resource("User.json");
+            request.query(function (users) {
+                $scope.users = users;
+            });
+        });
+    </script>
+</head>
+
+<body ng-controller="myCtrl">
+    <header class="container">
+        <div class="social">
+            <span class="like">Like us on</span>
+            <span class="fb"><a href="https://www.facebook.com/Swadisht-1859268741007293/" target="_blank"><img src="./SwadishtImages/fb.png" style='width:30px;' /></a></span>
+            <span class="tw"><a href="https://twitter.com/SwadishtProject" target="_blank"><img src="./SwadishtImages/tw.png" style='width:30px' /></a></span>
+        </div>
+    </header>
+
+    <header class="container2">
+        <div class="heading" style="margin-left:50px; font-size:40px; font-family: 'Sancreek';">Swadisht!!</div>
+        <ul class="options">
+       
+            <a href="./index.html"><li class="home">Home</li></a>
+            <a href="./Swadisht_About.html"><li class="about">About Us</li></a>
+            <a href="./Login_Main_Page.html"><li class="menu">Login</li></a>
+            <a href="./Swadisht_Menu.html"><li class="menu">Order Online</li></a>
+            <a href="./Swadisht_Review.html"><li class="review">Review</li></a>
+            <a href="./Reservation.html"><li class="reservation">Reserve Table</li></a>
+            <a href="./Admin login.html"><li class="admin">Admin</li></a>
+
+  
+        </ul>
+    </header>
+
+    <!--code for Login Main Page details-->
+    <div class="container3">
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Login')" id="defaultOpen">Login</button>
+            <button class="tablinks" onclick="openTab(event, 'Create an Account')">Create an Account</button>
+            <button class="tablinks" onclick="openTab(event, 'Check out as a Guest')">Check out as a Guest</button>
+        </div>
+		
+        <div id="Login" class="tabcontent" style="padding:0; margin:0; border:0">
+            <div class="login">
+                <h1>Login</h1>
+                <form id="form_id" method="post" name="myform" action="/login">
+                    <label>User ID :</label>
+                    <input type="text" name="userid" id="userid" required /><br />
+                    <label>Password :</label>
+                    <input type="password" name="password" id="password" required />
+                    <center><button>Submit</button></center>
+                    <div>(Username:nv; Password:xyz)</div>
+                </form>                
+            </div>
+        </div>
+
+        <div id="Create an Account" class="tabcontent" style="padding:0; margin:0; border:0">
+            <div class="createAccount">
+                <h1>Personal Information</h1>
+                <form id="form_id" method="post" name="myform" action="/register">
+
+                    <span class="createAccountLeft">
+                        <label>Name :</label>
+                        <input type="text" name="customer_Name" id="customer_Name" required /><br />
+                        <label>Mobile Number:</label>
+                        <input type="text" name="customer_Mobile" id="customer_Mobile" required />
+
+                        <label>Address: House/Apt Number :</label>
+                        <input type="text" name="customer_Apt" id="customer_Apt" required />
+                        <label>Address: Street :</label>
+                        <input type="text" name="customer_Street" id="customer_Street" required /><br />
+                        <label>Address: City :</label>
+                        <input type="text" name="customer_City" id="customer_City" required /><br />
+                        <label>Address: State :</label>
+                        <input type="text" name="customer_State" id="customer_State" required /><br />
+                    </span>
+                    <span class="createAccountRight">
+
+                        <label>Address: Country :</label>
+                        <input type="text" name="customer_Country" id="customer_Country" required /><br />
+                        <label>Address: Postal/ZIP Code :</label>
+                        <input type="text" name="customer_ZIP" id="customer_ZIP" required /><br />
+
+                        <label>Email Id:</label>
+                        <input type="text" name="customer_email" id="customer_email" required /><br />
+                        <label>Enter Password:</label>
+                        <input type="password" name="customer_password" id="customer_password" required /><br />
+                        <label>Confirm Password:</label>
+                        <input type="password" name="confirm_password" id="confirm_password" required /><br />
+
+                    </span><br/>
+                    <button id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="Check out as a Guest" class="tabcontent" style="padding:0; margin:0; border:0">
+            <div class="createGuest">
+                <h1>Personal Information</h1>
+                <form id="form_id" method="post" name="myform">
+                    <span class="createGuestLeft">
+                        <label>Name :</label>
+                        <input type="text" name="customer_Name" id="customer_Name" required /><br />
+                        <label>Mobile Number:</label>
+                        <input type="text" name="customer_Mobile" id="customer_Mobile" required />
+
+                        <label>Address: House/Apt Number :</label>
+                        <input type="text" name="customer_Apt" id="customer_Apt" required />
+                        <label>Address: Street :</label>
+                        <input type="text" name="customer_Street" id="customer_Street" required />
+                        <label>Address: City :</label>
+                        <input type="text" name="customer_City" id="customer_City" required />
+                    </span>
+                    <span class="createGuestRight">
+                        <label>Address: State :</label>
+                        <input type="text" name="customer_State" id="customer_State" required />
+                        <label>Address: Country :</label>
+                        <input type="text" name="customer_Country" id="customer_Country" required />
+                        <label>Address: Postal/ZIP Code :</label>
+                        <input type="text" name="customer_ZIP" id="customer_ZIP" required />
+                        <label>Email :</label>
+                        <input type="text" name="customer_email" id="customer_email" required />
+                    </span>
+                    <p><button id="submit">Submit</button></p>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script>
+            function openTab(evt, evtName) {
+                // Declare all variables
+                var i, tabcontent, tablinks,login_msg;
+
+                // Get all elements with class="tabcontent" and hide them
+
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+
+
+                }
+
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                // Show the current tab, and add an "active" class to the button that opened the tab
+                document.getElementById(evtName).style.display = "block";
+                document.getElementsByClassName("login_message").innerHTML = "";
+                evt.currentTarget.className += " active";
+            }
+			
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+    </script>
+
+
+    <footer class="container4">
+        <p class="address">
+            |  Address:
+            <span>2007 Gemini Avenue, #1302, Houston Texas  |</span>
+        </p>
+        <p class="phone">
+            |  Telephone Number:
+            <span>123-456-(7890)  |</span>
+        </p>
+        <p class="developedBy">Developed By: IAD Class, Team 25</p>
+    </footer>
+</body>
+</html>

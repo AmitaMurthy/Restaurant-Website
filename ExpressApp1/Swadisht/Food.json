@@ -1,0 +1,198 @@
+[
+  {
+    "starters": [
+      {
+        "id": 0,
+        "name": "Chilli Gobi",
+        "price": 10,
+        "qnt": 1
+      },
+      {
+        "id": 1,
+        "name": "Veg Manchurian",
+        "price": 10,
+        "qnt": 1
+      },
+      {
+        "id": 2,
+        "name": "Egg Chilli",
+        "price": 10,
+        "qnt": 1
+      },
+      {
+        "id": 3,
+        "name": "Pepper Chicken Dry",
+        "price": 10,
+        "qnt": 1
+      },
+      {
+        "id": 4,
+        "name": "Egg Burji",
+        "price": 4,
+        "qnt": 1
+      }
+    ],
+    "soups": [
+      {
+        "id": 0,
+        "name": "Tomato Soup",
+        "price": 4,
+        "qnt": 1
+      },
+      {
+        "id": 1,
+        "name": "Hot & Sour Soup",
+        "price": 4,
+        "qnt": 1
+      },
+      {
+        "id": 2,
+        "name": "Sweet Corn Soup",
+        "price": 4,
+        "qnt": 1
+      },
+      {
+        "id": 3,
+        "name": "Mix Veg Soup",
+        "price": 4,
+        "qnt": 1
+      }
+    ],
+    "mainCourse": [
+      {
+        "id": 0,
+        "name": "Navaratan Kurma",
+        "price": 7,
+        "qnt": 1
+      },
+      {
+        "id": 1,
+        "name": "Shahi Paneer",
+        "price": 7,
+        "qnt": 1
+      },
+      {
+        "id": 2,
+        "name": "Butter Chicken",
+        "price": 7,
+        "qnt": 1
+      },
+      {
+        "id": 3,
+        "name": "Chilli Chicken",
+        "price": 7,
+        "qnt": 1
+      }
+    ],
+    "Rice": [
+      {
+        "id": 0,
+        "name": "Veg Biryani",
+        "price": 6,
+        "qnt": 1
+      },
+      {
+        "id": 1,
+        "name": "Chicken Biryani",
+        "price": 6,
+        "qnt": 1
+      },
+      {
+        "id": 2,
+        "name": "Steamed Rice",
+        "price": 6,
+        "qnt": 1
+      },
+      {
+        "id": 3,
+        "name": "Veg Pulaav",
+        "price": 6,
+        "qnt": 1
+      }
+    ],
+    "Breads": [
+      {
+        "id": 0,
+        "name": "Butter Naan",
+        "price": 5,
+        "qnt": 1
+      },
+      {
+        "id": 1,
+        "name": "Aloo Parantha",
+        "price": 5,
+        "qnt": 1
+      },
+      {
+        "id": 2,
+        "name": "Butter Roti",
+        "price": 5,
+        "qnt": 1
+      },
+      {
+        "id": 3,
+        "name": "Tawa Roti",
+        "price": 5,
+        "qnt": 1
+      },
+      {
+        "id": 4,
+        "name": "Mooli Paratha",
+        "price": 4,
+        "qnt": 1
+      }
+    ],
+    "Beverages": [
+      {
+        "id": 0,
+        "name": "Jal Jira",
+        "price": 2,
+        "qnt": 1
+      },
+      {
+        "id": 1,
+        "name": "Mango Lassi",
+        "price": 2,
+        "qnt": 1
+      },
+      {
+        "id": 2,
+        "name": "Butter Milk",
+        "price": 2,
+        "qnt": 1
+      },
+      {
+        "id": 3,
+        "name": "Fresh Fruit Juice",
+        "price": 2,
+        "qnt": 1
+      }
+    ],
+    "Desserts": [
+      {
+        "id": 0,
+        "name": "Gulab Jamoon",
+        "price": 10,
+        "qnt": 1
+      },
+      {
+        "id": 1,
+        "name": "Gajar Halwa",
+        "price": 10,
+        "qnt": 1
+      },
+      {
+        "id": 2,
+        "name": "Ice-Cream",
+        "price": 10,
+        "qnt": 1
+      },
+      {
+        "id": 3,
+        "name": "Rasmalai",
+        "price": 10,
+        "qnt": 1
+      }
+    ]
+  }
+]

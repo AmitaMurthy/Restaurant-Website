@@ -1,0 +1,357 @@
+﻿body {
+    font: 15px/1.5 Arial, Helvetica;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+	background-image: url("./SwadishtImages/Background4.jpg");	
+}
+
+
+.container {
+    margin: 0px;
+    padding: 0;
+    color: black;
+    background-image: url("./SwadishtImages/Background1.jpg");
+    min-height: 70px;
+    overflow: hidden;
+}
+
+.social {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.fb {
+    margin-top: 40px;
+    padding: 10px;
+}
+
+    .fb:hover, .tw:hover {
+    }
+
+.container2 {
+    background-image: url("./SwadishtImages/Background2.jpg");
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    border-bottom: crimson 30px ridge;
+    border-top: crimson 30px groove;
+    color: aliceblue;
+    font-family: 'Sancreek';
+    overflow: hidden;	
+}
+
+p.heading {
+    padding: 20px;
+}
+
+ul {
+    text-align: right;
+    list-style-type: none;
+    margin-right: 60px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.menu {
+    color: greenyellow;
+}
+
+
+li {
+    display: inline;
+    padding: 0 20px 0 20px;
+    text-transform: capitalize;
+    color: white;
+}
+
+a:hover {
+    color: yellow;
+}
+
+
+.login_main{
+
+    color:darkblue;
+
+}
+
+
+.container4 {
+    color: beige;
+    padding: 0;
+    margin: 0;
+    border-top: crimson 30px groove;
+    background-color: crimson;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: smaller;
+    text-align: center;	
+clear:both;	
+	
+}
+
+.address {
+    padding: 0;
+    margin-top: 5px;
+    line-height: 1px;
+}
+
+.phone {
+    line-height: 15px;
+    margin: 0;
+}
+
+/* Start code for Tabs*/
+
+/* Style the tab */
+div.tab {	
+    overflow: hidden;    
+    
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+	background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;	
+}
+
+/* Change font size on hover */
+div.tab button:hover {
+    
+	font-size:large;
+	
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ffbc00;	
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;    
+    border-top: none;
+}
+
+/* End code for Tabs*/
+
+
+
+section {
+  float: left;
+  margin: 0 1.5%;  
+  width = 200px;	
+}
+
+#cart {   
+	display:inline-block; 
+    border-collapse: collapse;     
+    margin-left:200px;
+	margin-top:20px;	
+}
+
+#cart td, #cart th {    
+    padding: 2px;		
+}
+
+#cart th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+	padding-left:30px;
+	padding-right:30px;
+	border-radius:2px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;	
+}
+
+.foodTypeheadings{	
+	font-family: Sancreek;
+	font-size:30px;
+    
+}
+
+.foodItemheadings{	
+	font-family: Sancreek;
+	font-size:20px;
+}
+
+
+.addbutton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #fff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: small;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;     
+}
+
+.addbutton {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: small;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.addbutton:hover {background-color: #3e8e41}
+
+.addbutton:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.removebutton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color:#ff6666;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: small;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 25px;  
+}
+
+.removebutton {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: small;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #ff6666;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.removebutton:hover {background-color:#ff0000}
+
+.removebutton:active {
+  background-color: #ff0000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+
+/*------------------------------*/
+.checkbutton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #BEBEBE;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: small;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 25px;  
+}
+
+.checkbutton {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: small;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #BEBEBE;
+  border: none;	
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.checkbutton:hover {background-color:#808080}
+
+.checkbutton:active {
+  background-color:#808080;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/*-----------------------------*/
+
+.clearbutton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #ff9966;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: small;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 25px;  
+}
+
+.clearbutton {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: small;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #ff9966;
+  border: none;	
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.clearbutton:hover {background-color: #b33c00}
+
+.clearbutton:active {
+  background-color: #b33c00;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+.developedBy {
+    margin: 0;
+    padding: 0;
+    line-height: 27px;
+}

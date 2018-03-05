@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title> Swadisht | Authentic Indian Restaurant</title>
+    <link rel="stylesheet" href="./SwadishtCSSTrail.css" />
+</head>
+
+<body>
+    <header class="container">
+        <div class="social">
+            <span class="like">Like us on</span>
+            <span class="fb"><a href="https://www.facebook.com/Swadisht-1859268741007293/" target="_blank"><img src="./SwadishtImages/fb.png" style='width:30px;' /></a></span>
+            <span class="tw"><a href="https://twitter.com/SwadishtProject" target="_blank"><img src="./SwadishtImages/tw.png" style='width:30px' /></a></span>
+        </div>
+    </header>
+
+    <header class="container2">
+        <div class="heading" style="margin-left:50px; font-size:40px; font-family: 'Sancreek';">Swadisht!!</div>
+      
+            <ul class="options">
+              
+                <a href="./index.html"><li class="home">Home</li></a>
+                <a href="./Swadisht_About.html"><li class="about">About Us</li></a>
+                <a href="./Login_Main_Page.html"><li class="menu">Login</li></a>
+                <a href="./Swadisht_Menu.html"><li class="menu">Order Online</li></a>
+                <a href="./Swadisht_Review.html"><li class="review">Review</li></a>
+                <a href="./Reservation.html"><li class="reservation">Reserve Table</li></a>
+                <a href="./Admin login.html"><li class="admin">Admin</li></a>
+                    
+                
+            </ul>
+       
+    </header>
+
+    <header class="container3">
+        <div class="mySlides fade">
+            <center><img src="./SwadishtImages/food1.png" align="middle" style="width:1550px;" /></center>
+        </div>
+        <div class="mySlides fade">
+            <center><img src="./SwadishtImages/food2.png" align="middle" style="width:1550px;"></center>
+        </div>
+        <div class="mySlides fade">
+            <center><img src="./SwadishtImages/food3.png" align="middle" style="width:1550px;"></center>
+        </div>
+        <br />
+        <div class="welcomeText">
+            <p class="welcome" style="font-family:'Bookman Old Style'; font-size:large; font-weight:500;">Welcome to Swadisht!!</p>
+            <p style="font-family:'Baskerville Old Face'; font-size:medium;">
+                Swadisht is America's favorite Indian  restaurant, serving fresh and authentic Indian  food for over 10 years. Visit Swadisht online or at our location to explore hundreds of mouth watering dishes. Indian staples shine alongside vegetarian options at this no-frills spot with a daily lunch buffet. Simply decorated Indian restaurant offering both Southern & Northern cuisine. Our restaurant represents the ethnicity of India like no other. Come dine with us to explore the tastiness of spices and mouth watering dishes that your taste buds will remember for a long time!
+            </p>
+            <p id="more" style="font-family:'Baskerville Old Face'; font-size:medium; "></p>
+
+        </div>
+        <form>
+            <input class="readMore" id="readMore" type="button" value="Read More" onclick="return more(this)" />
+        </form>
+    </header>
+
+    <script>
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+        function more(button) {
+
+            if (button.value == "Read More") {
+                document.getElementById("more").innerHTML = "Swadisht cuisine encompasses a wide variety of regional and traditional cuisines native to India. Given the range of diversity in soil type, climate, culture, ethnic groups, and occupations, these cuisines vary significantly from each other and use locally available spices, herbs, vegetables, and fruits. Swadisht food is also heavily influenced by religious and cultural choices and traditions.";
+                button.value = "Read Less";
+                window.scrollTo(0, 700);
+            }
+            else {
+                document.getElementById("more").innerHTML = "";
+                button.value = "Read More";
+            }
+
+        }
+    </script>
+    <footer class="container4">
+        <p class="address">
+            |  Address:
+            <span>2007 Gemini Avenue, #1302, Houston Texas  |</span>
+        </p>
+        <p class="phone">
+            |  Telephone Number:
+            <span>123-456-(7890)  |</span>
+        </p>
+        <p class="developedBy">Developed By: IAD Class, Team 25</p>
+    </footer>
+</body>
+</html>

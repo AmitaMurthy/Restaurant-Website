@@ -1,0 +1,118 @@
+﻿body {
+    font: 15px/1.5 Arial, Helvetica;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+
+.container {
+    margin: 0px;
+    padding: 0;
+    color: black;
+    background-image: url("./SwadishtImages/Background1.jpg");
+    min-height: 70px;
+    overflow: hidden;
+}
+
+.social {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.fb {
+    margin-top: 40px;
+    padding: 10px;
+}
+
+    .fb:hover, .tw:hover {
+    }
+
+.container2 {
+    background-image: url("./SwadishtImages/Background2.jpg");
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    border-bottom: crimson 30px ridge;
+    border-top: crimson 30px groove;
+    color: aliceblue;
+    font-family: 'Sancreek';
+    overflow: hidden;
+}
+
+p.heading {
+    padding: 20px;
+}
+
+ul {
+    text-align: right;
+    list-style-type: none;
+    margin-right: 60px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.about {
+    color: greenyellow;
+}
+
+
+li {
+    display: inline;
+    padding: 0 20px 0 20px;
+    text-transform: capitalize;
+    color: white;
+}
+
+a:hover {
+    color: yellow;
+}
+
+
+.container3 {
+    background-image: url("./SwadishtImages/Background3.jpg");
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+.welcomeText {
+    margin-left:20px;
+    margin-right:20px;		
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+
+.container4 {
+    color: beige;
+    padding: 0;
+    margin: 0;
+    border-top: crimson 30px groove;
+    background-color: crimson;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: smaller;
+    text-align: center;
+}
+
+.address {
+    padding: 0;
+    margin-top: 5px;
+    line-height: 1px;
+}
+
+.phone {
+    line-height: 15px;
+    margin: 0;
+}
+
+.developedBy {
+    margin: 0;
+    padding: 0;
+    line-height: 27px;
+}
